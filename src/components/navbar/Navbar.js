@@ -1,10 +1,18 @@
-import React from "react";
+
+import React, { useState } from "react";
+
 import "./navbar.css"
 
 
 
 
 const Navbar = () => {
+  const [isActive, setIsActive] = useState(true);
+
+  const chngClass = (event) => {
+  
+    setIsActive(current => !current);
+  };
   return (
     <React.Fragment>
      
@@ -23,6 +31,9 @@ const Navbar = () => {
         </div>
         <div className="btn">
         <img src="https://img.icons8.com/clouds/50/null/anonymous-mask.png" alt="logo"/>
+       <label htmlFor="check" className="check">
+        <i className={isActive ? 'fa fa-bars' : 'fa fa-xmark'} onClick={chngClass}></i>
+       </label>
          
         </div>
         

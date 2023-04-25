@@ -93,3 +93,18 @@
 	font-size:12px;
 	font-weight:bold;
 }
+@media screen and (max-width:1050px) {
+	.container{
+		width: 100vw;
+		margin: 1em;
+	}
+	.container .left{
+		display: none;
+	
+}
+.container .right{
+	width:100%;
+	
+}
+
+}

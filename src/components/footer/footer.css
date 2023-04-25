@@ -15,3 +15,16 @@
     justify-content: center;
     text-align: center;
 }
+
+@media screen and (max-width:1050px) {
+    .footer {
+        height: 4em;
+    }
+    .footer p {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-overflow: inherit;
+        text-overflow: unset;
+    }
+}

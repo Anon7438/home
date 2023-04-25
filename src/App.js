@@ -8,6 +8,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Landingpg from "./components/landingpage/Landingpg"
 import ProtectedRoutes from "./services/protectedRoutes"
 
+import "./app.css"
+
 
 
 function App() {

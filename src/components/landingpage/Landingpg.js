@@ -8,7 +8,7 @@ const Landingpg = () => {
   const user = JSON.parse(localStorage.getItem("user"));
   const handleLogout = () => {
     localStorage.removeItem("loggedin");
-    navigate("/");
+    navigate("/home");
   };
   return (
     <>
