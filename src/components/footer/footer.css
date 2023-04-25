@@ -1,0 +1,17 @@
+.footer {
+    background: rgb(31, 27, 99);
+    background: linear-gradient(90deg, rgba(31, 27, 99, 1) 9%, rgba(19, 19, 106, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    padding: 1rem;
+    height: 2rem;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.footer p {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

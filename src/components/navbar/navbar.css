@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    width: 100vw;
+    height: 5rem;
+    background: rgb(31, 27, 99);
+    background: linear-gradient(90deg, rgba(31, 27, 99, 1) 9%, rgba(19, 19, 106, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    color: aliceblue;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul li {
+    display: inline;
+}
+
+li a {
+    color: aliceblue;
+    font-size: large;
+    font-family: sans-serif;
+    margin: 0px 12px;
+}
+
+li a:hover {
+    font-size: larger;
+    border-bottom: 2px solid salmon;
+
+}

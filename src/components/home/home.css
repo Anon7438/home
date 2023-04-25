@@ -1,0 +1,56 @@
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+    background:rgb(1,32,66);
+    
+}
+.home_text{
+    color: #FF8A71;
+    font-family: sans-serif;    
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;   
+    
+}
+
+.home_img img{
+    width: 600px;
+}
+
+
+.btn button{
+    height: 2.5rem;
+    width: 5rem;
+    margin: 0 0.3rem;
+    border-radius: 0.5rem;
+    background:tomato;
+    
+}
+.btn button:hover{
+    background:rgb(214, 38, 7);
+}
+
+.btn button a{
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.btn button a:hover{
+    animation: 0.3ms;  
+    border-bottom: 2px solid rgb(82, 223, 16);
+    
+}
+.username_landingpage{
+    font-size: 300;
+    color: aliceblue;
+    
+
+}
