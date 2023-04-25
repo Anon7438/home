@@ -28,10 +28,25 @@ li a:hover {
     transition: transform .4s linear;
 
 }
-.btn i{
+
+.checkbox {
     display: none;
 }
 
+
+
+
+
+
+
+
+
+/* .btn i{
+    display: none;
+}
+#openMenuBar{
+    display: none;
+}
 .checkbtn{
     font-size: 50px;
     color: white;
@@ -40,8 +55,6 @@ li a:hover {
     margin-right: 20px;
     cursor: pointer;
     display: none;
-    
-   
 
 }
 #check{
@@ -50,16 +63,19 @@ li a:hover {
 
 @media screen and (max-width:1050px) {
     .navbar {
-        width: 100vw;        
+        width: 100%;        
 
     }
     .btn i{
         display: inline;
     }
-    .btn i:hover ,ul.show{
-        left: 0;
-        cursor: pointer;
+    #openMenuBar{
+        display: inline;
     }
+ #openMenuBar:checked ~ ul{
+    left:0;
+
+ }
     .btn img{
         display: none;
     }
@@ -91,9 +107,47 @@ li a:hover {
 
 @media screen and (max-width:700px) {
     
-}
+} */
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:1050px) {
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 80vh;
+        background-color: #2c3e50;
+        top: 80px;
+        left:-100%;
+        text-align: center;
+        transition: transform 250ms ease-in-out;
+
+    }   
+
+    #openMenuBar:checked ~ ul{
+        left: 0;
+    }
+    ul li{
+        margin: 0.1rem 0px;
+        padding: 2rem;
+    }
     
     
+    .checkbox {
+        display: inline;
+        height:45px ;
+        opacity: 100%;
+        float: inline-end;
+        
+      
+    }
+    .navbar {
+        justify-content:space-between;
+        margin:0 0.2rem;
+        padding: 0 1rem;
+        width: 100vw;
+    }
+
+   
 }

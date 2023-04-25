@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React  from "react";
 
 import "./navbar.css"
 
@@ -7,12 +7,7 @@ import "./navbar.css"
 
 
 const Navbar = () => {
-  const [isActive, setIsActive] = useState(true);
 
-  const chngClass = (event) => {
-  
-    setIsActive(current => !current);
-  };
   return (
     <React.Fragment>
      
@@ -21,6 +16,11 @@ const Navbar = () => {
         <img src="https://img.icons8.com/clouds/50/null/anonymous-mask.png" alt="logo"/>
         </div>
         <div className="nav-items">
+              <label htmlFor="check" className="check_btn">                
+                  <input type="checkbox" className="checkbox" id="openMenuBar" />
+                  
+               
+               
           <ul>
             <li>  <a href="/home">Home</a> </li>
             <li>  <a href="www.google.com">About</a>        </li>
@@ -28,16 +28,10 @@ const Navbar = () => {
             <li>  <a href="www.google.com">Contact</a>      </li>
             <li>  <a href="www.google.com">Feedback</a>     </li>
           </ul>
-        </div>
-        <div className="btn">
-        <img src="https://img.icons8.com/clouds/50/null/anonymous-mask.png" alt="logo"/>
-       <label htmlFor="check" className="check">
-        <i className={isActive ? 'fa fa-bars' : 'fa fa-xmark'} onClick={chngClass}></i>
-       </label>
-         
-        </div>
-        
+          </label>
+        </div>        
       </div>
+
  
     </React.Fragment>
   );
