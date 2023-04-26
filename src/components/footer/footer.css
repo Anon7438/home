@@ -24,7 +24,16 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        text-overflow: inherit;
-        text-overflow: unset;
+        
     }
+}
+
+@media screen and (max-width: 600px){
+
+    .footer{
+        position: relative;
+        height: 3rem;
+        text-align: justify;
+        max-width: fit-content;
+        }
 }
